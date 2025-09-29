@@ -29,7 +29,7 @@ jobs:
       - run: pip install leveldb
       - run: python py-2.py "${{ inputs.path }}"
       - run: tree -a -I .git
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: artifact-tampermonkey-extract-output
           path: |
